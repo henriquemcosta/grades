@@ -29,11 +29,8 @@ app.use(
 );
 app.use('/', gradeRouter);
 
-// app.get('/', (req, res) => {
-//   res.send('API em execucao');
-// });
+app.get('/', (req, res) => {
+  res.send('API em execucao');
+});
 
 app.listen(process.env.PORT || 8081, () => {});
-// app.listen(3000, () => {
-//   console.log('API My Bank Iniciada');
-// });
